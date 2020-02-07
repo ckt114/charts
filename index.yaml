@@ -3,7 +3,7 @@ entries:
   ghost:
   - apiVersion: v1
     appVersion: 3.1.1
-    created: "2020-02-06T20:51:40.012942839-05:00"
+    created: "2020-02-07T13:48:50.050290292-05:00"
     description: A simple, powerful publishing platform that allows you to share your
       stories with the world
     digest: f5519436ea7e0438a06cb91d5ca33a8d1f5e6989d64e687187d4405c5203827e
@@ -30,7 +30,22 @@ entries:
   gogs:
   - apiVersion: v1
     appVersion: 0.11.91
-    created: "2020-02-06T20:51:40.015871026-05:00"
+    created: "2020-02-07T13:48:50.055660476-05:00"
+    description: A Helm chart for gogs, a self-hosted git server.
+    digest: 91e65e6b4d7b238b6afe6e8ee03472f51392d86f7e73db50ab865ab73071fa57
+    home: https://github.com/trankchung/gogs.git
+    maintainers:
+    - email: chung.k.tran@gmail.com
+      name: Chung Tran
+    name: gogs
+    sources:
+    - https://hub.docker.com/r/gogs/gogs
+    urls:
+    - gogs-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
+    appVersion: 0.11.91
+    created: "2020-02-07T13:48:50.054303892-05:00"
     description: A Helm chart for gogs, a self-hosted git server.
     digest: 0a1015130d3826a207efc2fc1cc0aa0084213a4ff917b32ffd12a889c36577ac
     home: https://github.com/trankchung/gogs.git
@@ -46,7 +61,7 @@ entries:
   qbittorrent:
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2020-02-06T20:51:40.01997639-05:00"
+    created: "2020-02-07T13:48:50.060453011-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 968332abf1517fefb899f0b4fc73561e2c46ea08fe820b65d21f8ce183dac05f
     home: https://github.com/trankchung/qbittorrent.git
@@ -61,7 +76,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2020-02-06T20:51:40.018272702-05:00"
+    created: "2020-02-07T13:48:50.057925004-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 63a87b1f491b5b5b40ee20b3669aa85865acfa16a1f0777ee91b713be1bd29a6
     home: https://github.com/trankchung/qbittorrent.git
@@ -74,4 +89,4 @@ entries:
     urls:
     - qbittorrent-1.0.0.tgz
     version: 1.0.0
-generated: "2020-02-06T20:51:40.002642285-05:00"
+generated: "2020-02-07T13:48:50.034212414-05:00"

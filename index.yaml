@@ -3,7 +3,7 @@ entries:
   ghost:
   - apiVersion: v1
     appVersion: 3.1.1
-    created: "2020-02-21T09:32:40.903796562-05:00"
+    created: "2020-02-21T22:38:40.6038588-05:00"
     description: A simple, powerful publishing platform that allows you to share your
       stories with the world
     digest: f5519436ea7e0438a06cb91d5ca33a8d1f5e6989d64e687187d4405c5203827e
@@ -30,7 +30,7 @@ entries:
   gogs:
   - apiVersion: v1
     appVersion: 0.11.91
-    created: "2020-02-21T09:32:40.906422441-05:00"
+    created: "2020-02-21T22:38:40.612602638-05:00"
     description: A Helm chart for gogs, a self-hosted git server.
     digest: e5bf76772a5e571af1c154adda3c31f39f72126a79855db482865d7ca09def99
     home: https://github.com/trankchung/gogs.git
@@ -45,7 +45,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 0.11.91
-    created: "2020-02-21T09:32:40.905457976-05:00"
+    created: "2020-02-21T22:38:40.609597033-05:00"
     description: A Helm chart for gogs, a self-hosted git server.
     digest: 0a1015130d3826a207efc2fc1cc0aa0084213a4ff917b32ffd12a889c36577ac
     home: https://github.com/trankchung/gogs.git
@@ -61,7 +61,7 @@ entries:
   qbittorrent:
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2020-02-21T09:32:40.910090184-05:00"
+    created: "2020-02-21T22:38:40.621238842-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 1bf581c29dd8f24c1c825d6d194120503a1b7b7862296d637ec4a215e7089ac5
     home: https://github.com/trankchung/qbittorrent.git
@@ -76,7 +76,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2020-02-21T09:32:40.90801338-05:00"
+    created: "2020-02-21T22:38:40.618996161-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 63a87b1f491b5b5b40ee20b3669aa85865acfa16a1f0777ee91b713be1bd29a6
     home: https://github.com/trankchung/qbittorrent.git
@@ -92,7 +92,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.7
-    created: "2020-02-21T09:32:40.910720412-05:00"
+    created: "2020-02-21T22:38:40.622611811-05:00"
     description: A Helm chart for Redis.
     digest: 7c8a1305ecb33195e21563585079b924887e71735b5795f582a6680748ca654b
     home: https://github.com/trankchung/redis.git
@@ -105,4 +105,29 @@ entries:
     urls:
     - https://trankchung.github.io/charts/redis-1.0.0.tgz
     version: 1.0.0
-generated: "2020-02-21T09:32:40.891887902-05:00"
+  traefik:
+  - apiVersion: v1
+    appVersion: 2.1.3
+    created: "2020-02-21T22:38:40.625016905-05:00"
+    description: A Traefik based Kubernetes ingress controller
+    digest: f1ac934f5c838dc9d5c57b9b86c53330b110a1b1f720b20c88106fd878f89990
+    engine: gotpl
+    home: https://traefik.io/
+    icon: http://traefik.io/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    maintainers:
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ludovic@containo.us
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    urls:
+    - https://trankchung.github.io/charts/traefik-3.5.1.tgz
+    version: 3.5.1
+generated: "2020-02-21T22:38:40.562168129-05:00"

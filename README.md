@@ -1,12 +1,13 @@
 # Setup
+
 ```shell
-$ helm repo add trankchung https://trankchung.github.com/charts
+$ helm repo add ckt114 https://www.tran-scending.net/charts
 $ helm repo update
 ```
 
 # Install
-```shell
-$ helm search trankchung
-$ helm install trankchung/gogs
-```
 
+```shell
+$ helm search ckt114
+$ helm install ckt114/gogs
+```

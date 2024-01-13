@@ -1,7 +1,7 @@
 # Setup
 
 ```console
-$ helm repo add ckt114 https://www.tran-scending.net/charts
+$ helm repo add ckt114 https://charts.ckt114.net
 $ helm repo update
 ```
 

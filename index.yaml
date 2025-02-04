@@ -2,7 +2,28 @@ apiVersion: v1
 entries:
   common:
   - apiVersion: v2
-    created: "2025-02-03T10:14:53.298006-05:00"
+    created: "2025-02-04T16:40:09.809133-05:00"
+    description: Function library for k8s-at-home charts
+    digest: 3c8d272da1e348953067ae36afc96f484a3bd3d5a6994a1a5df1701825a7c9ed
+    home: https://github.com/k8s-at-home/library-charts/tree/main/stable/common
+    keywords:
+    - k8s-at-home
+    - common
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    - email: devin.kray@gmail.com
+      name: onedr0p
+    - email: nick@cajun.pro
+      name: dirtycajunrice
+    name: common
+    type: library
+    urls:
+    - common-4.5.3.tgz
+    version: 4.5.3
+  - apiVersion: v2
+    created: "2025-02-04T16:40:09.806788-05:00"
     description: Function library for k8s-at-home charts
     digest: 1bf8c1d3651ccfcf25e2a2137ea7074dad31c9c4706c40724580b2b4a2a266de
     home: https://github.com/k8s-at-home/library-charts/tree/main/stable/common
@@ -25,7 +46,7 @@ entries:
   ddns-updater:
   - apiVersion: v2
     appVersion: v2.9.0
-    created: "2025-02-03T10:14:53.298568-05:00"
+    created: "2025-02-04T16:40:09.80978-05:00"
     description: A Helm chart for ddns-updater in Kubernetes
     digest: 3d1808947f365dc4c22ae5861937f0540fb5e098dabb7371d982be00f56aceee
     home: https://github.com/qdm12/ddns-updater
@@ -37,7 +58,7 @@ entries:
   frps:
   - apiVersion: v2
     appVersion: v0.61.1
-    created: "2025-02-03T10:14:53.299279-05:00"
+    created: "2025-02-04T16:40:09.810694-05:00"
     description: A Helm chart for frps running in Kubernetes.
     digest: 5abf580a535f22db2bab61c658dd3d53fb6715421b07c6b8063136d2daaae8ab
     home: https://github.com/fatedier/frp
@@ -48,8 +69,27 @@ entries:
     version: 0.1.0
   generic:
   - apiVersion: v2
+    created: "2025-02-04T16:40:09.817583-05:00"
+    dependencies:
+    - name: common
+      repository: https://charts.ckt114.net
+      version: 4.5.3
+    description: A generic chart leveraging common library chart for use with any
+      application.
+    digest: a29b328e7be1a35605ad7e41ab25383dc9ec3fb8db6699182c6db1dbb5d4b7ab
+    home: https://charts.ckt114.net
+    maintainers:
+    - email: chung.k.tran@gmail.com
+      name: Chung Tran
+    name: generic
+    sources:
+    - https://github.com/ckt114/library-charts/blob/main/charts/stable/common/values.yaml
+    urls:
+    - generic-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-03T10:14:53.301983-05:00"
+    created: "2025-02-04T16:40:09.813129-05:00"
     dependencies:
     - name: common
       repository: https://charts.ckt114.net
@@ -70,7 +110,7 @@ entries:
   ghost:
   - apiVersion: v1
     appVersion: 3.1.1
-    created: "2025-02-03T10:14:53.304358-05:00"
+    created: "2025-02-04T16:40:09.820012-05:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -103,7 +143,7 @@ entries:
   gogs:
   - apiVersion: v1
     appVersion: 0.11.91
-    created: "2025-02-03T10:14:53.30567-05:00"
+    created: "2025-02-04T16:40:09.821608-05:00"
     description: A Helm chart for gogs, a self-hosted git server.
     digest: e5bf76772a5e571af1c154adda3c31f39f72126a79855db482865d7ca09def99
     home: https://github.com/trankchung/gogs.git
@@ -118,7 +158,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 0.11.91
-    created: "2025-02-03T10:14:53.305149-05:00"
+    created: "2025-02-04T16:40:09.821008-05:00"
     description: A Helm chart for gogs, a self-hosted git server.
     digest: 0a1015130d3826a207efc2fc1cc0aa0084213a4ff917b32ffd12a889c36577ac
     home: https://github.com/trankchung/gogs.git
@@ -134,7 +174,7 @@ entries:
   k8s-resources:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-03T10:14:53.305976-05:00"
+    created: "2025-02-04T16:40:09.822061-05:00"
     description: A Helm chart to create secrets and configmaps for OpenTelemetry agents.
     digest: 681bc38f3f01e711f3d33310fc251236d25e59701f281237f6dfb76ed356c5f6
     name: k8s-resources
@@ -145,7 +185,7 @@ entries:
   mango:
   - apiVersion: v2
     appVersion: v0.27.0
-    created: "2025-02-03T10:14:53.306556-05:00"
+    created: "2025-02-04T16:40:09.822768-05:00"
     description: Mango comics manager Helm chart for Kubernetes.
     digest: 2399ba78df74fe243274ac5e2bbef90558f85287065ce9bf8eafc0a5c127efb8
     maintainers:
@@ -163,7 +203,7 @@ entries:
   password-pusher:
   - apiVersion: v2
     appVersion: 1.36.5
-    created: "2025-02-03T10:14:53.307108-05:00"
+    created: "2025-02-04T16:40:09.823375-05:00"
     description: Password PusherA Helm chart for Kubernetes
     digest: 05658a56c799ccb7727a1cfec2d40b93d843f7ee9875fe8c9a8a0874bc6c2ce7
     maintainers:
@@ -181,7 +221,7 @@ entries:
   qbittorrent:
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2025-02-03T10:14:53.308907-05:00"
+    created: "2025-02-04T16:40:09.824897-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 1bf581c29dd8f24c1c825d6d194120503a1b7b7862296d637ec4a215e7089ac5
     home: https://github.com/trankchung/qbittorrent.git
@@ -196,7 +236,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 4.1.9.99
-    created: "2025-02-03T10:14:53.307759-05:00"
+    created: "2025-02-04T16:40:09.82414-05:00"
     description: A Helm chart for qBittorentt with OpenVPN
     digest: 63a87b1f491b5b5b40ee20b3669aa85865acfa16a1f0777ee91b713be1bd29a6
     home: https://github.com/trankchung/qbittorrent.git
@@ -212,7 +252,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.7
-    created: "2025-02-03T10:14:53.309445-05:00"
+    created: "2025-02-04T16:40:09.825443-05:00"
     description: A Helm chart for Redis.
     digest: 7c8a1305ecb33195e21563585079b924887e71735b5795f582a6680748ca654b
     home: https://github.com/trankchung/redis.git
@@ -228,7 +268,7 @@ entries:
   squid:
   - apiVersion: v2
     appVersion: 5.2-22.04_beta
-    created: "2025-02-03T10:14:53.310065-05:00"
+    created: "2025-02-04T16:40:09.826103-05:00"
     description: A Helm chart for squid in Kubernetes
     digest: 1705ea3521c31f0a2f9ea852bb8e6e0efbcf8df42f40a52303c05ed38920e363
     name: squid
@@ -239,7 +279,7 @@ entries:
   traefik:
   - apiVersion: v1
     appVersion: 2.1.3
-    created: "2025-02-03T10:14:53.310684-05:00"
+    created: "2025-02-04T16:40:09.826871-05:00"
     description: A Traefik based Kubernetes ingress controller
     digest: f1ac934f5c838dc9d5c57b9b86c53330b110a1b1f720b20c88106fd878f89990
     home: https://traefik.io/
@@ -263,7 +303,7 @@ entries:
   vault-unsealer:
   - apiVersion: v1
     appVersion: 1.3.4
-    created: "2025-02-03T10:14:53.311094-05:00"
+    created: "2025-02-04T16:40:09.827369-05:00"
     description: A Helm chart to automaically unseal Vault.
     digest: 5c381181c8d7c6111a4aa451c48c6114e19ec31c330c8d75ef03cec99d3fcc74
     home: https://github.com/trankchung/vault-unsealer.git
@@ -276,4 +316,4 @@ entries:
     urls:
     - vault-unsealer-1.0.0.tgz
     version: 1.0.0
-generated: "2025-02-03T10:14:53.295151-05:00"
+generated: "2025-02-04T16:40:09.803425-05:00"
